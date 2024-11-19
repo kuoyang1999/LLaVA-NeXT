@@ -7,13 +7,15 @@ from PIL import Image
 import requests
 import copy
 import torch
+import os
 
 import sys
 import warnings
 
 warnings.filterwarnings("ignore")
 
-pretrained = "lmms-lab/llava-onevision-qwen2-0.5b-si"
+base_dir = os.path.dirname(os.path.abspath(__file__))
+pretrained = os.path.join(base_dir, "../../../models/llava-onevision-qwen2-0.5b-ov")
 model_name = "llava_qwen"
 device = "cuda"
 device_map = "auto"
