@@ -71,3 +71,11 @@ playground/*.json
 mlx_configs/
 data_processing/
 # demo/
+
+#Dataset
+llavaID/eval/dataset/
+data/*.json
+data/onevision2M/
+
+# Eval Results
+llavaID/eval/results/
